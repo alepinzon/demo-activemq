@@ -21,7 +21,7 @@ public class FooScheduler {
         this.objectMapper = objectMapper;
     }
 
-    //@Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 10000)
     private void sendEvent() throws JsonProcessingException {
         final FooEvent event = createEvent();
 
